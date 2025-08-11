@@ -9,58 +9,131 @@ import depresion from "@/assets/img/depresion.png";
 export const serviceList = [
   {
     id: 1,
-    title: "Terapia individual",
+    title: "Psicoterapia Online",
     img: terapiaIndividual,
-    href: "/servicios/terapia-individual",
+    slug: "psicoterapia-online",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Atención psicológica a distancia, con la misma calidez y confidencialidad que en una consulta presencial. Ideal para quienes requieren flexibilidad de horarios o viven en otras ciudades.",
   },
   {
     id: 2,
-    title: "Terapia de pareja o familiar",
+    title: "Psicoterapia para Adultos",
     img: parejaFamiliar,
-    href: "/servicios/terapia-de-pareja-o-familiar",
+    slug: "psicoterapia-adultos",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Espacio terapéutico enfocado en el manejo del estrés, la ansiedad, el duelo, los conflictos personales y otros retos propios de la vida adulta.",
   },
   {
     id: 3,
-    title: "Evaluaciones psicológicas",
+    title: "Terapia de Pareja",
     img: evaluaciones,
-    href: "/servicios/evaluaciones-psicologicas",
+    slug: "terapia-de-pareja",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Intervención orientada a mejorar la comunicación, resolver conflictos y fortalecer el vínculo afectivo entre los miembros de la relación.",
   },
   {
     id: 4,
-    title: "Asesoramiento y orientación en temas de salud mental",
+    title: "Consejería para el Adulto Mayor",
     img: orientacionMental,
-    href: "/servicios/asesoramiento-y-orientacion",
-    description: "Visually or semantically separates content.",
+    slug: "consejeria-adulto-mayor",
+    description:
+      "Atención especializada que aborda aspectos emocionales, adaptativos y sociales en la etapa de la adultez mayor.",
   },
   {
     id: 5,
-    title: "Manejo del estrés",
+    title: "Psicoterapia Infantil",
     img: estres,
-    href: "/servicios/manejo-del-estres",
+    slug: "psicoterapia-infantil",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "A través del juego, la creatividad y técnicas adaptadas a su edad, ayudamos a niños y niñas a comprender y expresar sus emociones.",
   },
   {
     id: 6,
-    title: "Ansiedad",
+    title: "Psicoterapia para Adolescentes",
     img: ansiedad,
-    href: "/servicios/ansiedad",
+    slug: "psicoterapia-adolescentes",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Acompañamiento psicológico en una etapa clave para el desarrollo de la identidad, la autoestima y la autonomía.",
   },
   {
     id: 7,
-    title: "Depresión",
+    title: "Consejería para Padres",
     img: depresion,
-    href: "/servicios/depresion",
+    slug: "consejeria-para-padres",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Orientación psicológica para fortalecer el rol parental, mejorar la comunicación y manejar conductas difíciles en casa.",
+  },
+  {
+    id: 8,
+    title: "Psicoterapia para Trastorno Límite de la Personalidad (TLP)",
+    img: depresion,
+    slug: "psicoterapia-tlp",
+    description:
+      "Intervención clínica especializada dirigida a personas con TLP que enfrentan emociones intensas, impulsividad y relaciones inestables.",
+  },
+  {
+    id: 9,
+    title: "Orientación Vocacional",
+    img: depresion,
+    slug: "orientacion-vocacional",
+    description:
+      "Proceso de exploración personal y profesional que ayuda a identificar habilidades, intereses y aspiraciones.",
+  },
+  {
+    id: 10,
+    title: "Evaluaciones Psicológicas",
+    img: depresion,
+    slug: "evaluaciones-psicologicas",
+    description:
+      "Aplicación de pruebas y entrevistas clínicas para evaluar el funcionamiento cognitivo, emocional y conductual.",
+  },
+  {
+    id: 11,
+    title: "Certificado de Salud Mental",
+    img: depresion,
+    slug: "certificado-de-salud-mental",
+    description:
+      "Documento oficial expedido por un profesional de psicología, que respalda el estado de salud mental del paciente.",
+  },
+  {
+    id: 12,
+    title: "Estimulación Temprana (Lenguaje, Atención y Motricidad)",
+    img: depresion,
+    slug: "estimulacion-temprana",
+    description:
+      "Programa dirigido a potenciar las habilidades cognitivas, lingüísticas y motoras en la primera infancia.",
+  },
+  {
+    id: 13,
+    title: "Terapia de Aprendizaje",
+    img: depresion,
+    slug: "terapia-de-aprendizaje",
+    description:
+      "Atención especializada para niños con dificultades académicas como dislexia, problemas de comprensión o bajo rendimiento escolar.",
+  },
+  {
+    id: 14,
+    title: "Terapia de Atención y Concentración",
+    img: depresion,
+    slug: "terapia-atencion-concentracion",
+    description:
+      "Intervenciones específicas para fortalecer la capacidad de enfoque, autocontrol y organización mental.",
+  },
+  {
+    id: 15,
+    title: "Terapia Conductual",
+    img: depresion,
+    slug: "terapia-conductual",
+    description:
+      "Aplicación de técnicas psicológicas para modificar conductas desadaptativas y reforzar comportamientos adecuados.",
+  },
+  {
+    id: 16,
+    title: "Terapia Emocional",
+    img: depresion,
+    slug: "terapia-emocional",
+    description:
+      "Espacio terapéutico para identificar, expresar y regular emociones intensas como la ansiedad, tristeza o ira.",
   },
 ];
 

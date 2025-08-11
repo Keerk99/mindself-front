@@ -13,8 +13,15 @@ import {
 import { serviceList } from "@/utils";
 
 export function Header() {
+  const textStyle = `text-[#25411e] cursor-pointer
+                    hover:text-[#25411e] focus-visible:text-[#25411e] active:text-[#25411e]
+                    data-[state=open]:text-[#25411e] data-[active]:text-[#25411e]`;
+
+  const textStyleButton = `bg-[#25411e]
+                          text-white`;
+
   return (
-    <header>
+    <header className="fixed w-full">
       <NavigationMenu
         viewport={false}
         className="max-w-[1900px] flex justify-between items-center mx-auto my-0 px-[10rem] py-[3rem]"
@@ -25,20 +32,22 @@ export function Header() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className={navigationMenuTriggerStyle()}
+              className={`${navigationMenuTriggerStyle()} ${textStyle}`}
             >
               <Link href="/">Inicio</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Nuestros Servicios</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={textStyle}>
+              Nuestros Servicios
+            </NavigationMenuTrigger>
             <NavigationMenuContent className="left-1/2 -translate-x-1/2 w-full md:w-auto">
               <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {serviceList.map((service) => (
                   <ListItem
                     key={service.id}
                     title={service.title}
-                    href={service.href}
+                    href={`/servicios/${service.slug}`}
                   >
                     {service.description}
                   </ListItem>
@@ -47,7 +56,9 @@ export function Header() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>¿Quienes Somos?</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={textStyle}>
+              ¿Quienes Somos?
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-max gap-4">
                 <li>
@@ -68,7 +79,7 @@ export function Header() {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className={navigationMenuTriggerStyle()}
+              className={`${navigationMenuTriggerStyle()} ${textStyleButton}`}
             >
               <Link
                 href="https://wa.me/51973920145"

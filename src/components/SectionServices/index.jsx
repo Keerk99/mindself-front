@@ -7,8 +7,16 @@ export default function SectionServices() {
   return (
     <Section>
       <div className="flex flex-col justify-between w-full gap-16">
-        <h3 className="text-2xl text-center">Nuestros Servicios</h3>
+        <h3 className="text-4xl text-center text-[#25411e]">
+          Nuestros Servicios
+        </h3>
         <div className="flex gap-8 flex-wrap justify-center">
+          <p className="text-xl text-[#25411e]">
+            En nuestro centro, ofrecemos una atención integral y personalizada
+            para cada etapa de la vida, con el objetivo de promover el bienestar
+            emocional, el desarrollo personal y la mejora en la calidad de vida
+            de nuestros pacientes.
+          </p>
           {serviceList.map(({ id, title, img }) => (
             <Card
               key={id}

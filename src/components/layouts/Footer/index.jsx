@@ -6,7 +6,7 @@ import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-[#1b4b0e] text-white">
       <div className="flex flex-col my-0 mx-auto py-6 px-40 max-w-[1900px] gap-16">
         <div className="flex justify-around">
           <p>Aca va el otro logo</p>
