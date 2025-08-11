@@ -21,7 +21,7 @@ export function Header() {
                           text-white`;
 
   return (
-    <header className="fixed w-full">
+    <header className="fixed w-full z-100">
       <NavigationMenu
         viewport={false}
         className="max-w-[1900px] flex justify-between items-center mx-auto my-0 px-[10rem] py-[3rem]"
@@ -43,7 +43,7 @@ export function Header() {
             </NavigationMenuTrigger>
             <NavigationMenuContent className="left-1/2 -translate-x-1/2 w-full md:w-auto">
               <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                {serviceList.map((service) => (
+                {serviceList.slice(0, 8).map((service) => (
                   <ListItem
                     key={service.id}
                     title={service.title}

@@ -2,6 +2,7 @@ import { serviceList } from "@/utils";
 import Section from "../layouts/Section";
 import { Card, CardHeader, CardTitle } from "../ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SectionServices() {
   return (
@@ -17,16 +18,32 @@ export default function SectionServices() {
             emocional, el desarrollo personal y la mejora en la calidad de vida
             de nuestros pacientes.
           </p>
-          {serviceList.map(({ id, title, img }) => (
-            <Card
+          {serviceList.map(({ id, title, img, slug }) => (
+            <Link
               key={id}
-              className="w-full max-w-xs hover:cursor-pointer py-8"
+              href={`/servicios/${slug}`}
+              className="group block w-full max-w-xs"
             >
-              <CardHeader className="flex flex-col items-center gap-4">
-                <Image src={img} alt={`Imagen de ${title}`} width={250} />
-                <CardTitle className="text-2xl text-center">{title}</CardTitle>
-              </CardHeader>
-            </Card>
+              <Card
+                className="h-full py-8 rounded-2xl
+                 transition-transform duration-300 ease-out transform-gpu
+                 group-hover:scale-[1.03] group-focus-visible:scale-[1.03]
+                 hover:shadow-lg hover:z-10 will-change-transform
+                 motion-reduce:transition-none motion-reduce:transform-none"
+              >
+                <CardHeader className="flex flex-col items-center gap-4">
+                  <Image
+                    src={img}
+                    alt={`Imagen de ${title}`}
+                    width={250}
+                    className="transition-transform duration-300 transform-gpu group-hover:scale-105"
+                  />
+                  <CardTitle className="text-2xl text-center">
+                    {title}
+                  </CardTitle>
+                </CardHeader>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
