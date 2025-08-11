@@ -41,8 +41,11 @@ export function Header() {
             <NavigationMenuTrigger className={textStyle}>
               Nuestros Servicios
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="left-1/2 -translate-x-1/2 w-full md:w-auto">
-              <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <NavigationMenuContent className="z-50 md:absolute left-1/2 -translate-x-1/2 w-full md:w-auto">
+              <ul
+                className="grid w-[400px] gap-2 md:w-[520px] md:grid-cols-2 lg:w-[640px]
+                 max-h-[70vh] overflow-y-auto p-3 overscroll-contain"
+              >
                 {serviceList.slice(0, 8).map((service) => (
                   <ListItem
                     key={service.id}
