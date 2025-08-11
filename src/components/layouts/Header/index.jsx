@@ -51,9 +51,7 @@ export function Header() {
                     key={service.id}
                     title={service.title}
                     href={`/servicios/${service.slug}`}
-                  >
-                    {service.description}
-                  </ListItem>
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>

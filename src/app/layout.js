@@ -7,6 +7,8 @@ export const metadata = {
   description: "Centro de Psicología MINDSELF Descrubre el camino hacia el bienestar",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
